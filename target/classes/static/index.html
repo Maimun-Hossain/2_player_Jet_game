@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Added lang attribute for better accessibility -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>JET FIGHTER – 2 PLAYER</title>
+    <!-- Link to the main stylesheet for game styling -->
+    <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+    <!-- Main container for the game screens -->
+    <div id="game-container">
+        <!-- Menu Screen: Shown initially, allows players to start a game or view scoreboard -->
+        <div id="menu-screen" class="game-screen-base">
+            <h1>JET FIGHTER – 2 PLAYER</h1>
+            <button id="play-button" class="game-button">PLAY</button>
+            <button id="scoreboard-button" class="game-button">SCOREBOARD</button>
+        </div>
+
+        <!-- Player Name Input Screen: Appears after clicking PLAY, to get player's name -->
+        <div id="player-name-screen" class="game-screen-base" style="display: none;">
+            <h2>Enter Your Name</h2>
+            <input type="text" id="player-name-input" placeholder="Enter your name" class="game-input">
+            <button id="join-button" class="game-button">JOIN</button>
+        </div>
+
+        <!-- Waiting Screen: Shown after a player joins, while waiting for a second player -->
+        <div id="waiting-screen" class="game-screen-base" style="display: none;">
+            <h2>Waiting for another player...</h2>
+            <p>Share this game with a friend!</p>
+        </div>
+
+        <!-- Game Screen: Contains the HTML5 Canvas where actual gameplay is rendered -->
+        <div id="game-screen" class="game-screen-base" style="display: none;">
+            <canvas id="game-canvas"></canvas>
+        </div>
+
+        <!-- Scoreboard Screen: Displays top scores fetched from the backend -->
+        <div id="scoreboard-screen" class="game-screen-base" style="display: none;">
+            <h2>SCOREBOARD</h2>
+            <table id="leaderboard-table">
+                <thead>
+                    <tr>
+                        <th>Player Name</th>
+                        <th>Score</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Leaderboard entries will be dynamically inserted here by JavaScript -->
+                </tbody>
+            </table>
+            <button id="back-to-menu-button" class="game-button">Back to Menu</button>
+        </div>
+
+        <!-- Game Over Screen: Displays results after a match concludes -->
+        <div id="game-over-screen" class="game-screen-base" style="display: none;">
+            <h2>GAME OVER!</h2>
+            <h3 id="winner-display"></h3> <!-- Displays the winner's name or "It's a Draw!" -->
+            <p id="player-score-display"></p> <!-- Displays the current player's final score -->
+            <button id="exit-button" class="game-button">EXIT</button> <!-- Button to return to the main menu -->
+        </div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <!-- SockJS for WebSocket fallback, provides cross-browser compatibility -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.5.1/sockjs.min.js"></script>
+    <!-- STOMP.js for STOMP protocol over WebSockets, simplifies messaging -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+    <!-- Main game logic JavaScript file -->
+    <script src="game.js?v=2"></script>
+</body>
+</html>

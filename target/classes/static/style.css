@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); /* Import the retro-style font from Google Fonts */
+
+/* Global styles for the body element */
+body {
+    background-color: #000; /* Black background for an arcade feel */
+    color: #fff; /* White text color by default */
+    font-family: 'Press Start 2P', cursive; /* Apply the retro font */
+    display: flex; /* Use flexbox for centering content */
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default body margin */
+    background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); /* A subtle space background texture */
+    overflow: hidden; /* Prevent scrolling if content overflows */
+}
+
+/* Base styles for all game screens (menu, player name, waiting, scoreboard, game over) */
+.game-screen-base { /* New class added in index.html for common styling */
+    text-align: center; /* Center text content */
+    padding: 20px; /* Internal spacing */
+    border: 5px solid #ff0; /* Yellow border for arcade cabinet look */
+    box-shadow: 0 0 15px #f00, 0 0 10px #ff0 inset; /* Retro glow effect with red and yellow */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    border-radius: 10px; /* Slightly rounded corners */
+}
+
+/* Headings (h1, h2) styling */
+h1, h2 {
+    color: #ff0; /* Yellow text color */
+    text-shadow: 2px 2px #f00; /* Red text shadow for a retro 3D effect */
+    margin-bottom: 20px; /* Space below headings */
+}
+
+/* Button styling */
+.game-button { /* New class added in index.html for common styling */
+    background-color: #ff0; /* Yellow background */
+    color: #000; /* Black text */
+    border: 2px solid #f00; /* Red border */
+    padding: 10px 20px; /* Padding for button size */
+    font-size: 1.2em; /* Larger font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin: 10px; /* Space around buttons */
+    font-family: 'Press Start 2P', cursive; /* Apply retro font */
+    transition: all 0.2s ease-in-out; /* Smooth transition for hover effects */
+}
+
+/* Button hover effect */
+.game-button:hover {
+    background-color: #f00; /* Red background on hover */
+    color: #ff0; /* Yellow text on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Input field styling */
+.game-input { /* New class added in index.html for common styling */
+    padding: 10px; /* Internal spacing */
+    font-size: 1em; /* Standard font size */
+    border: 2px solid #ff0; /* Yellow border */
+    background-color: #333; /* Dark gray background */
+    color: #ff0; /* Yellow text for input */
+    font-family: 'Press Start 2P', cursive; /* Apply retro font */
+    text-align: center; /* Center align text inside input */
+    margin-bottom: 10px; /* Space below input */
+}
+
+/* Game Screen specific styling (canvas container) */
+#game-screen {
+    border: 5px solid #ff0; /* Yellow border */
+    background-image: url('images/vecteezy_clouds-on-sunny-day-with-blue-sky-background_.jpg'); /* Cloud background for gameplay */
+    background-size: cover; /* Cover the entire background area */
+    box-shadow: 0 0 15px #f00, 0 0 10px #ff0 inset; /* Retro glow effect */
+}
+
+/* Leaderboard table styling */
+#leaderboard-table {
+    width: 100%; /* Full width within its container */
+    border-collapse: collapse; /* Collapse borders for a clean look */
+    margin: 20px auto; /* Center table horizontally with margin */
+    color: #fff; /* White text */
+}
+
+/* Table header and data cell styling */
+#leaderboard-table th, #leaderboard-table td {
+    border: 1px solid #ff0; /* Yellow borders for cells */
+    padding: 8px; /* Internal spacing */
+    text-align: center; /* Center align text */
+    font-size: 0.9em; /* Slightly smaller font for table content */
+}
+
+/* Table header specific styling */
+#leaderboard-table th {
+    background-color: #333; /* Dark gray background for headers */
+    color: #ff0; /* Yellow text for headers */
+}
+
+/* Game Over Screen specific text styling */
+#game-over-screen h3, #game-over-screen p {
+    color: #fff; /* White text */
+    margin: 10px 0; /* Vertical spacing */
+    text-shadow: 1px 1px #f00; /* Red text shadow */
+}
+

@@ -18,7 +18,7 @@
 
 Check out this video to see the game in action!
 
-https://github.com/user-attachments/assets/1cf55118-2e3b-4e12-986c-e1d533b3e64c
+https://github.com/Maimun-Hossain/2_player_Jet_game/raw/refs/heads/main/IMG/jetgame.mp4
 
 ---
 

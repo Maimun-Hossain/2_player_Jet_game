@@ -4,6 +4,8 @@
 
 <h1 align="center">🚀 JetGame: A 2-Player Aerial Combat Game 🚀</h1>
 
+<h4 align="center">UIU AOOP PROJECT</h4>
+
 <p align="center">
   Welcome to JetGame! An exciting real-time 2-player jet fighter game built with Java, Spring Boot, and WebSockets. 
   This project is a demonstration of full-stack web development and concurrent programming. 

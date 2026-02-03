@@ -122,7 +122,7 @@ The game is now running on your local server.
 
 ## 🕹️ How to Play
 
-*   **Player 1:** Uses the `W`, `A`, `S`, `D` keys to move and `Spacebar` to shoot.
+*   **Player 1:** Uses the `W`, `S`, keys to move and `Spacebar` to shoot.
 *   **Player 2:** Uses the `Arrow Keys` to move and `Enter` to shoot.
 *   **Objective:** Shoot down your opponent to score points. The player with the highest score wins!
 
